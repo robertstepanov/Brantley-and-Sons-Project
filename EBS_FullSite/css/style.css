@@ -1,0 +1,393 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
+
+/* html {
+  scroll-behavior: smooth;
+  --main-footer-bg-color: #485a8d;
+  --main-bg-color: #233874;
+  --main-text-color: #fff;
+} */
+
+body {
+ margin: 0;
+ font-family: 'Raleway', sans-serif;
+ text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+/* typography
+====================================== */
+
+h1 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+.info {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+
+.info span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em;
+}
+
+@media (min-width: 60rem) {
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .info {
+    font-size: 3.7rem;
+  }
+}
+
+/* button
+====================================== */
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: var(--main-text-color);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.6;
+  z-index: 200;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+.button {
+  display:inline-block;
+  font-size: 1.15em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.button:hover {
+  background: #233874;
+  color: #fff;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+    cursor: default;
+  }
+  .button:hover {
+    background: none;
+  }
+  .button-small:hover {
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    background: #233874;
+    cursor: pointer;
+  }
+}
+
+.button-small {
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+
+
+
+
+/* header
+======================================= */
+
+header {
+  position: absolute; 
+  width: 100%;
+  margin: 1em;
+}
+
+.logo {
+  margin-right: 2em;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em 1em 0 0;
+}
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .5em;
+  color: #fff;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #233874;
+}
+
+@media (min-width: 60rem) {
+  .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    margin-right: 1em;
+  }
+}
+
+/*  home-hero
+===================================== */
+
+.home-hero {
+  background-image: url(../images/bee_bg_opacity.jpg);
+  padding: 10em 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+@media (min-width: 60rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 15vh;
+  }
+}
+
+
+/* home-about
+======================================== */
+
+.home-about-textbox {
+  background: #233874;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -3.5%;
+  outline: 2px solid #fff;
+  outline-offset: -2.5em;
+  color: #fff;
+  position: relative;
+}
+
+.home-about-textbox h1 {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .75em;
+  background: #233874;
+  padding: 0 .25em;
+}
+
+@media (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .home-about {
+    padding-bottom: 1em;
+  }
+
+  .home-about-textbox h1 {
+    top: .55em;
+    padding: 0 .325em;
+  }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-about {
+    background-image: url(../images/possum_1280x850.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 3em;
+  }
+
+  .home-about-textbox {
+    width: 50%;
+    padding: 7em;
+    outline-offset: -3.75em;
+    margin-left: -2.5%;
+    top: -5.5em;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+  }
+
+  .home-about-textbox h1 {
+    top: .75em;
+    left: 6rem;
+    transform: translateX(0);
+  }
+
+}
+
+/* pests & wildlife
+========================================== */
+
+.pests {
+  margin: 3em 0;
+}
+
+.pest-item {
+  margin: 0;
+  position: relative;
+}
+
+.pest-item img {
+  display: block;
+}
+
+.pest-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: #fff;
+  background: rgba(0,0,0,.6);
+  padding-bottom: 2em;
+}
+
+.pest-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  .pest-item {
+    width: 100%;
+    
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 60rem) { 
+  .pest-item {
+    width: 33.333334%;
+    float: left;
+  }
+
+  .pest-desc {
+    transform: translateY(150%);
+  }
+
+  .pest-item:hover .pest-desc {
+    transform: translateY(0%);
+  }
+}
+
+
+/* location & contact
+========================================== */
+
+.home-contact-textbox {
+  background: #233874;
+  padding: 4em;
+  width: 100vw;
+  outline: 2px solid #fff;
+  outline-offset: -2.5em;
+  color: #fff;
+  position: relative;
+  
+}
+
+.home-contact-textbox h1 {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .5em;
+  background: #233874;
+  padding: 0 .25em;
+}
+
+.home-contact-textbox address {
+  margin-top: .75em;
+}
+
+.container-map {
+  background: #485a8d;
+  width: 100vw;
+  
+}
+
+.map iframe {
+ max-width: 100vw;
+ border: 2px solid blue;
+ padding: 3em;
+  
+}
+
+
+.social i {
+  color: #fff;
+  font-size: 2em;
+  padding: 10px 40px 40px 40px;
+}
+
+.main-footer {
+  height: 100px;
+  background: #233874;
+  width: 100vw;
+  margin: auto;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  margin-bottom: 10px;
+  position: sticky;
+}
